@@ -1,6 +1,9 @@
 import React from 'react';
 import { MapPin, Phone, Award, GraduationCap } from 'lucide-react';
 import { skills, personalInfo, education, certifications } from '../data/portfolioData';
+import CountUp from './CountUp';
+import NuGetDownloads from './NuGetDownloads';
+
 
 const About = () => {
   return (
@@ -58,14 +61,38 @@ const About = () => {
                 <h3 className="font-bold text-gray-900">Certifications</h3>
               </div>
               <div className="space-y-3">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="text-sm">
-                    <div className="font-semibold text-gray-800">{cert.name}</div>
-                    <div className="text-gray-600">{cert.issuer} • {cert.date}</div>
-                  </div>
-                ))}
-              </div>
+              {certifications.map((cert, index) => (
+              <div key={index} className="text-sm">
+                <div className="flex items-center gap-1 font-semibold text-gray-800">
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 flex items-center gap-1 transition-colors"
+                  >
+                    {cert.name}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-[20px] h-[20px] text-blue-500" // slight increase from default 14px (3.5rem)
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M7 17L17 7M7 7h10v10"
+                    />
+                  </svg>
+        </a>
+      </div>
+      <div className="text-gray-600">{cert.issuer} • {cert.date}</div>
+    </div>
+  ))}
+</div>
             </div>
+            
           </div>
 
           <div>
@@ -94,18 +121,30 @@ const About = () => {
                 <div className="text-3xl font-bold text-blue-600 mb-1">2+</div>
                 <div className="text-sm text-gray-700">Years Experience</div>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
-                <div className="text-3xl font-bold text-green-600 mb-1">1000+</div>
+
+              <div className="relative bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
+                <span className="absolute top-1 left-1 bg-green-200 text-green-700 text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wide">
+                  Real-time data
+                </span>
+
+                <div className="text-3xl font-bold text-green-600 mb-1">
+                  <NuGetDownloads />+
+                </div>
                 <div className="text-sm text-gray-700">NuGet Downloads</div>
               </div>
+
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
-                <div className="text-3xl font-bold text-purple-600 mb-1">100k+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-1">
+                  <CountUp from={0} to={100000} duration={2} separator="," className="count-up-text inline-block" />+
+                </div>
                 <div className="text-sm text-gray-700">Records Optimized</div>
               </div>
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg border border-orange-200">
-                <div className="text-3xl font-bold text-orange-600 mb-1">99.7%</div>
-                <div className="text-sm text-gray-700">Time Saved</div>
-              </div>
+  <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg border border-orange-200">
+    <div className="text-3xl font-bold text-orange-600 mb-1">
+      <CountUp from={0} to={99.7} duration={2} className="count-up-text inline-block" />%
+    </div>
+    <div className="text-sm text-gray-700">Time Saved</div>
+  </div>
             </div>
           </div>
         </div>

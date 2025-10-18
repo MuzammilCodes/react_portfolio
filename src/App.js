@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 
+
+
 function App() {
   const [activeSection, setActiveSection] = useState('about');
   const [scrollY, setScrollY] = useState(0);
@@ -26,6 +28,7 @@ function App() {
         scrollY={scrollY}
       />
       <Hero />
+
       <About />
       <Experience />
       <Projects />

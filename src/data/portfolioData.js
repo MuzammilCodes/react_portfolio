@@ -85,13 +85,13 @@ export const certifications = [
     name: 'Google Certified UX Design Fundamentals',
     issuer: 'Coursera',
     date: 'October 2022',
-    link: '#'
+    link: 'https://drive.google.com/file/d/1uOxohUqt-aBnsXx4aN_iw55JPbuEnNnz/view?usp=sharing'
   },
   {
     name: 'Oxford Achiever English Proficiency',
     issuer: 'Oxford',
     date: '2022',
-    link: '#'
+    link: 'https://drive.google.com/file/d/1uxXv_f3rI1x89dk1VJqY8pTUqjmVdHun/view?usp=sharing'
   }
 ];
 
