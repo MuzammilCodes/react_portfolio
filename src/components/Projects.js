@@ -36,15 +36,17 @@ const Projects = () => {
                       <Github size={20} />
                     </a>
                   )}
-                  <a 
+                  {project.link && (
+                    <a 
                     href={project.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-600 transition-colors"
                     aria-label="External Link"
-                  >
+                    >
                     <ExternalLink size={20} />
                   </a>
+                  )}
                 </div>
               </div>
               

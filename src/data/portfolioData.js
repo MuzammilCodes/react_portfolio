@@ -8,27 +8,27 @@ export const skills = {
 export const projects = [
   {
     title: '.NET API Code Generator',
-    description: 'A NuGet package that automates the generation of Controller, Model, Repository, and Business layers with dependency injection. Supports modular architectures and configurable CRUD generation. Downloaded 1000+ times and actively maintained at version 1.0.7.',
+    description: 'A NuGet package that automates the generation of Controller, Model, Repository, and Business layers with dependency injection. Supports modular architectures and configurable CRUD generation. Downloaded 1300+ times and actively maintained at version 1.0.7.',
     tech: ['C#', '.NET', 'NuGet', 'CLI', 'File I/O'],
-    metrics: '1000+ Downloads • v1.0.7',
-    link: '#',
-    github: '#'
+    metrics: '1300+ Downloads • v1.0.8',
+    link: 'https://www.nuget.org/packages/CodeGenTool',
+    github: 'https://github.com/MuzammilCodes/CodeGenTool'
   },
   {
     title: 'Batch Record Management System',
     description: 'Enterprise document management system with automated DOCX/PDF workflows using Open XML SDK and iTextSharp. Features server-side pagination handling 100k+ records in 3 seconds, automated cleanup jobs reducing memory spikes by 30%, and JWT authentication with microservices architecture.',
     tech: ['Angular', '.NET Core', 'SQL Server', 'VSTO', 'WPF', 'JWT', 'Microservices'],
     metrics: '100k+ Records • 3s Load Time',
-    link: '#',
-    github: '#'
+    link: '',
+    github: ''
   },
   {
     title: 'Process Work Order System',
     description: 'Engineering equipment issue reporting system built with Domain Driven Design pattern. Features comprehensive CRUD operations, bulk upload support, consistent resolution tracking, and deployed on IIS with Azure DevOps CI/CD pipelines.',
     tech: ['.NET Core', 'Angular', 'SQL Server', 'Entity Framework', 'DDD', 'IIS'],
     metrics: 'Enterprise Scale • DDD Architecture',
-    link: '#',
-    github: '#'
+    link: '',
+    github: ''
   }
 ];
 
@@ -36,7 +36,7 @@ export const experience = [
   {
     role: 'Software Engineer',
     company: 'Audree Infotech',
-    period: 'Sep 2022 – Present',
+    period: 'Sep 2023 – Present',
     location: 'Hyderabad, India',
     description: 'Developing enterprise-grade applications using .NET Core and Angular. Built CLI tools, implemented automated testing, and contributed to Agile development processes with sprint planning, code reviews, and daily standups.',
     achievements: [
@@ -50,7 +50,7 @@ export const experience = [
   {
     role: 'Software Development Intern',
     company: 'Audree Infotech',
-    period: 'Jun 2022 – Sep 2022',
+    period: 'Jun 2023 – Sep 2023',
     location: 'Hyderabad, India',
     description: 'Gained hands-on experience in full-stack development with C#, ASP.NET MVC, and .NET Framework through real-world projects.',
     achievements: [
@@ -100,7 +100,6 @@ export const personalInfo = {
   email: 'muzammil.webdev@gmail.com',
   phone: '+91 75692 70679',
   location: 'Hyderabad, India',
-  github: 'https://github.com/yourusername',
-  linkedin: 'https://www.linkedin.com/in/yourusername',
-  portfolio: 'https://yourportfolio.com'
+  github: 'https://github.com/MuzammilCodes',
+  linkedin: 'https://www.linkedin.com/in/muzammil-codes',
 };

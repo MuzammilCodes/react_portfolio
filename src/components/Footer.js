@@ -1,6 +1,6 @@
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { skills, personalInfo, education, certifications } from '../data/portfolioData';
+import { personalInfo } from '../data/portfolioData';
 
 const Footer = () => {
   return (
@@ -10,13 +10,13 @@ const Footer = () => {
             © 2024 Mohammed Muzamiluddin. All rights reserved.
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
+            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
+            <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:muzammil.webdev@gmail.com" className="text-gray-400 hover:text-blue-600 transition-colors">
+            <a href={`mailto:${personalInfo.email}`} className="text-gray-400 hover:text-blue-600 transition-colors">
               <Mail size={20} />
             </a>
           </div>

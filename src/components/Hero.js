@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Download, ArrowRight, ChevronDown } from 'lucide-react';
 import { skills, personalInfo, education, certifications } from '../data/portfolioData';
+import CV from '../assets/_MuzammilCV.pdf';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -40,21 +41,13 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <button
-              onClick={scrollToContact}
-              className="inline-flex items-center px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
-            >
-              Get in touch
-              <ArrowRight size={20} className="ml-2" />
-            </button>
-            <a
-              href="#"
-              download
-              className="inline-flex items-center px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-full hover:border-blue-600 hover:text-blue-600 transition-colors duration-200"
-            >
-              <Download size={20} className="mr-2" />
-              Download CV
-            </a>
+
+            <a href={CV}   className="inline-flex items-center px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-full hover:border-blue-600 hover:text-blue-600 transition-colors duration-200"
+ download="_MuzammilCV.pdf">
+    <Download size={20} className="mr-2" />
+  Download CV
+</a>
+
           </div>
 
           <div className="flex justify-center space-x-6">
