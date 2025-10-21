@@ -27,17 +27,19 @@ const Experience = () => {
                   {/* Icon */}
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                      <Briefcase className="text-blue-600" size={28} />
+                      {/* <Briefcase className="text-blue-600" size={28} /> */}
+                      <img src="/src/assets/audree_logo.png" alt={`${exp.company} logo`} className="w-12 h-12" />
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="flex-grow">
                     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-1">{exp.role}</h3>
-                        <div className="text-blue-600 font-semibold text-lg mb-2">{exp.company}</div>
-                      </div>
+                    <div className="flex items-center flex-wrap gap-2 mb-2">
+                      <p className="text-2xl font-bold text-gray-900">{exp.role}</p>
+                      <span className="text-gray-400 text-2xl leading-none">•</span>
+                      <span className="text-blue-600 font-semibold text-lg">{exp.company}</span>
+                    </div>
                       <div className="text-sm text-gray-500 lg:text-right space-y-1">
                         <div className="flex items-center lg:justify-end">
                           <Calendar size={16} className="mr-2" />

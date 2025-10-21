@@ -1,8 +1,8 @@
 export const skills = {
   'Programming': ['C#', 'TypeScript', 'JavaScript', 'SQL'],
   'Backend': ['ASP.NET Core', 'Web API', 'Entity Framework', 'Dapper'],
-  'Frontend': ['Angular 17', 'React', 'HTML5', 'CSS3', 'Bootstrap', 'RxJS'],
-  'Tools & DevOps': ['Azure DevOps', 'Git', 'CI/CD', 'SQL Server', 'Firebase', 'Postman', 'SSMS']
+  'Frontend': ['Angular 17', 'HTML5', 'CSS3', 'Bootstrap', 'RxJS'],
+  'Tools & DevOps': ['Azure DevOps', 'Git', 'SQL Server', 'Firebase', 'Postman', 'SSMS']
 };
 
 export const projects = [
@@ -36,6 +36,7 @@ export const experience = [
   {
     role: 'Software Engineer',
     company: 'Audree Infotech',
+    logo:'/public/audree_logo.png',
     period: 'Sep 2023 – Present',
     location: 'Hyderabad, India',
     description: 'Developing enterprise-grade applications using .NET Core and Angular. Built CLI tools, implemented automated testing, and contributed to Agile development processes with sprint planning, code reviews, and daily standups.',
