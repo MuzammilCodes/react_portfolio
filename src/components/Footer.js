@@ -4,7 +4,7 @@ import { personalInfo } from '../data/portfolioData';
 
 const Footer = () => {
   return (
-      <footer className="py-1 px-1 border-t border-gray-200 bg-white">
+      <footer className="py-1 px-1 border-t border-gray-200 bg-white mt-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-600 text-sm mb-4 md:mb-0">
             © 2024 Mohammed Muzamiluddin. All rights reserved.

@@ -6,7 +6,7 @@ import NuGetDownloads from './NuGetDownloads';
 
 const About = () => {
   return (
-    <section id="about" className="pt-10 pb-1 bg-gray-50 rounded-2xl" >
+    <section id="about" className="pt-10 pb-4 bg-gray-50 rounded-2xl ms-5 me-5" >
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>

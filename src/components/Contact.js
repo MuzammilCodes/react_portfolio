@@ -9,7 +9,7 @@ const Contact = () => {
       <section className="py-2">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
-          <p className="text-xl text-gray-600 mb-1 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-3 max-w-2xl mx-auto">
             I'm currently available for freelance work and full-time opportunities. 
             Let's discuss how we can bring your project to life.
           </p>

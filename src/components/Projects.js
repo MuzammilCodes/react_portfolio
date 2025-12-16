@@ -5,10 +5,10 @@ import { skills, personalInfo, education, certifications } from '../data/portfol
 
 const Projects = () => {
   return (
-    <section id="projects" className="rounded-2xl py-2 px-6 bg-gray-50">
+    <section id="projects" className="rounded-2xl py-4 px-6 bg-gray-50 ms-5 me-5">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+        <div className="text-center mb-8 mt-2">
+          <h2 className="text-4xl font-bold mb-2">Featured Projects</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Showcasing my recent work in building scalable enterprise applications and developer tools.
           </p>
@@ -70,7 +70,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-6">
           <a
             href={`https://github.com/${personalInfo.github.split('/').pop()}`}
             target="_blank"
