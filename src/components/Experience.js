@@ -5,9 +5,9 @@ import { skills, personalInfo, education, certifications } from '../data/portfol
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="py-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <h2 className="text-4xl font-bold mb-4">Experience</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             My professional journey in software development, building enterprise applications and contributing to impactful projects.

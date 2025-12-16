@@ -5,7 +5,7 @@ import { skills, personalInfo, education, certifications } from '../data/portfol
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 bg-gray-50">
+    <section id="projects" className="rounded-2xl py-2 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>

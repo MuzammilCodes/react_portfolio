@@ -60,18 +60,6 @@ export const experience = [
       'Participated in code reviews and learned best practices for enterprise application development'
     ]
   },
-  {
-    role: 'Frontend Development Intern',
-    company: 'Score Kitty',
-    period: 'Dec 2021 – Feb 2022',
-    location: 'Hyderabad, India (Remote)',
-    description: 'Designed dynamic frontends and customized WordPress sites, focusing on UI/UX enhancement and responsive design.',
-    achievements: [
-      'Designed dynamic frontend to enhance user interface (UI) and user experience (UX)',
-      'Customized and maintained WordPress sites using Elementor, significantly reducing design turnaround time and streamlining client feedback cycles',
-      'Ensured mobile responsiveness and cross-platform compatibility of web applications'
-    ]
-  }
 ];
 
 export const education = {
@@ -99,7 +87,6 @@ export const certifications = [
 export const personalInfo = {
   name: 'Mohammed Muzamiluddin',
   email: 'muzammil.webdev@gmail.com',
-  phone: '+91 75692 70679',
   location: 'Hyderabad, India',
   github: 'https://github.com/MuzammilCodes',
   linkedin: 'https://www.linkedin.com/in/muzammil-codes',

@@ -4,10 +4,9 @@ import { skills, personalInfo, education, certifications } from '../data/portfol
 import CountUp from './CountUp';
 import NuGetDownloads from './NuGetDownloads';
 
-
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-gray-50">
+    <section id="about" className="pt-10 pb-1 bg-gray-50 rounded-2xl" >
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
@@ -33,12 +32,6 @@ const About = () => {
               <div className="flex items-center text-gray-600">
                 <MapPin size={18} className="mr-3 text-blue-600 flex-shrink-0" />
                 <span>{personalInfo.location}</span>
-              </div>
-              <div className="flex items-center text-gray-600">
-                <Phone size={18} className="mr-3 text-blue-600 flex-shrink-0" />
-                <a href={`tel:${personalInfo.phone}`} className="hover:text-blue-600 transition-colors">
-                  {personalInfo.phone}
-                </a>
               </div>
             </div>
 
