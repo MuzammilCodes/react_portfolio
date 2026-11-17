@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen bg-[#eceef2] text-[#4c4f65]">
       {/* <Navigation 
         activeSection={activeSection} 
         setActiveSection={setActiveSection}

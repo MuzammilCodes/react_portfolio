@@ -1,7 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Award, GraduationCap } from 'lucide-react';
 import { skills, personalInfo, education, certifications } from '../data/portfolioData';
-import CountUp from './CountUp';
 import NuGetDownloads from './NuGetDownloads';
 
 const About = () => {
@@ -13,14 +12,14 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                I'm a passionate Full-Stack Developer with 2+ years of experience building enterprise-grade applications. 
-                I specialize in .NET Core, Angular, and modern web technologies, with a strong focus on clean architecture 
-                and performance optimization.
+                I'm a software developer with 3+ years of experience and a problem-solver's mindset, driven by curiosity to turn ideas 
+                into practical solutions. I work with .NET, Angular, Vue.js, and modern web technologies, focusing on automating 
+                repetitive tasks, simplifying complex workflows, and building reusable tools.
               </p>
               <p>
-                My experience ranges from developing batch record management systems handling 100k+ records to creating 
-                developer productivity tools that reduce setup time by 99.7%. I'm passionate about writing clean, 
-                maintainable code and contributing to Agile development environments.
+                My experience ranges from developing GM dealership websites and reducing build times by 90%, to batch record 
+                management systems handling 100k+ records and developer tools that reduce setup time by 99.7%. I contribute 
+                to Agile environments with clean, maintainable code.
               </p>
               <p>
                 I thrive on solving complex problems through creative solutions and continuously learning about software 
@@ -111,7 +110,7 @@ const About = () => {
             {/* Quick Stats */}
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
-                <div className="text-3xl font-bold text-blue-600 mb-1">2+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">3+</div>
                 <div className="text-sm text-gray-700">Years Experience</div>
               </div>
 
@@ -126,18 +125,6 @@ const About = () => {
                 <div className="text-sm text-gray-700">NuGet Downloads</div>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
-                <div className="text-3xl font-bold text-purple-600 mb-1">
-                  <CountUp from={0} to={100000} duration={2} separator="," className="count-up-text inline-block" />+
-                </div>
-                <div className="text-sm text-gray-700">Records Optimized</div>
-              </div>
-  <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg border border-orange-200">
-    <div className="text-3xl font-bold text-orange-600 mb-1">
-      <CountUp from={0} to={99.7} duration={2} className="count-up-text inline-block" />%
-    </div>
-    <div className="text-sm text-gray-700">Time Saved</div>
-  </div>
             </div>
           </div>
         </div>

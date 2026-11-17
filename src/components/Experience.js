@@ -17,18 +17,16 @@ const Experience = () => {
         <div className="space-y-8">
           {experience.map((exp, index) => (
             <div key={index} className="relative">
-              {/* Timeline connector */}
-              {index !== experience.length - 1 && (
-                <div className="hidden md:block absolute left-8 top-20 bottom-0 w-0.5 bg-gray-200"></div>
-              )}
-              
               <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
                 <div className="flex flex-col md:flex-row gap-6">
                   {/* Icon */}
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                      {/* <Briefcase className="text-blue-600" size={28} /> */}
-                      <img src="/src/assets/audree_logo.png" alt={`${exp.company} logo`} className="w-12 h-12" />
+                      {exp.logo ? (
+                        <img src={exp.logo} alt={`${exp.company} logo`} className="w-12 h-12" />
+                      ) : (
+                        <Briefcase className="text-blue-600" size={28} />
+                      )}
                     </div>
                   </div>
 

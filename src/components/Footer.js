@@ -4,10 +4,10 @@ import { personalInfo } from '../data/portfolioData';
 
 const Footer = () => {
   return (
-      <footer className="py-1 px-1 border-t border-gray-200 bg-white mt-4">
+      <footer className="py-1 px-1 border-t border-gray-200 bg-[#eceef2] mt-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-600 text-sm mb-4 md:mb-0">
-            © 2024 Mohammed Muzamiluddin. All rights reserved.
+            © 2026 Mohammed Muzamiluddin. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">

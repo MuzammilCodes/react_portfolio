@@ -36,7 +36,7 @@ const Hero = () => {
               <span className="text-blue-600">Muzamiluddin</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Full-Stack Developer crafting enterprise applications with .NET Core, Angular, and modern web technologies
+              Software Developer crafting enterprise applications with .NET, Angular, Vue.js, and modern web technologies
             </p>
           </div>
 
